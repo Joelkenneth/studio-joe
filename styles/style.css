@@ -68,9 +68,6 @@ header nav ul li a:hover {
     header nav ul li {
     display: flex;
 }
-    header nav ul li a {
-        width: 5em;
-    }
 }
 
 .opener {
@@ -117,7 +114,7 @@ header nav ul li a:hover {
     }
     
     .opener h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     
     .opener p {
