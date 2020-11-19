@@ -1,0 +1,225 @@
+/* CSS Document */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+
+html,
+body {
+    background: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    padding: 4em 6em 4em 6em;
+}
+
+
+
+.logo {
+    margin-right: auto;
+    width: 10em;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+header nav ul li a {
+    color: #080F0F;
+}
+
+header nav ul li a:hover {
+    color: #16db93;
+}
+
+@media (max-width: 800px) {
+    header {
+        align-items: center;
+        padding: 3em 3em 3em 3em;
+    }
+    header nav ul {
+        display: flex;
+        margin: auto;
+    }
+    header nav ul li {
+    display: flex;
+}
+    header nav ul li a {
+        width: 5em;
+    }
+}
+
+.opener {
+    margin: 0;
+    padding-left: 6em;
+    padding-right: 6em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5em;
+}
+
+.opener article {
+    width: 45%;
+    margin: 0;
+}
+
+.opener h1 {
+    margin: 0;
+    padding-bottom: .5em;
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+    font-size: 4.5em;
+    border-bottom: 10px solid #16db93;
+}
+
+.opener p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding-top: 1em;
+    width: 90%
+}
+
+@media (max-width: 800px) {
+    .opener {
+        display: table;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    
+    .opener article {
+        width: 100%;
+    }
+    
+    .opener h1 {
+        font-size: 3em;
+    }
+    
+    .opener p {
+        font-size: 1em;
+        margin-bottom: 4em;
+    }
+}
+
+.wave {
+    animation: rotation 20s infinite linear;
+    display: flex;
+    padding: 1em;
+    margin: 3em 4em 3em 8em;
+    width: 25em;
+}
+
+@media (max-width: 800px) {
+    .wave {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(359deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.portfolio {
+    margin: 0;
+    padding-left: 6em;
+    padding-right: 6em;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.portfolio article {
+    width: 50%;
+}
+
+section {
+    margin: 0;
+    padding: 1em 0 1em 0;
+}
+
+section p {
+    width: 100%;
+}
+
+.portfolio img {
+    margin: 0;
+    padding: 1.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.profiel {
+    display: flex;
+    margin: 0;
+    width: 90%;
+}
+
+
+.aboutme {
+    margin: 0;
+    padding-left: 6em;
+    padding-right: 6em;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-bottom: 5em;
+}
+
+.aboutme article {
+    width: 45%;
+    margin: 0;
+}
+
+.aboutme h1 {
+    margin: 0;
+    padding-bottom: .5em;
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+    font-size: 4.5em;
+    border-bottom: 10px solid #16db93;
+}
+
+.aboutme p {
+    padding-top: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
